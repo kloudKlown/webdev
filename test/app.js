@@ -4,7 +4,7 @@ module.exports = function(app)
     app.post("/api/test", createMessage);
     app.delete("/api/test/:id", deleteMessage);
 
-    var connectionString = 'mongodb://KlownSuh:#)!)@((^Kross1@ds111549.mlab.com:11549/webdev';
+    var connectionString = 'mongodb://admin:root@ds111549.mlab.com:11549/webdev';
 
     if(process.env.MLAB_USERNAME) {
         connectionString = process.env.MLAB_USERNAME + ":" +
