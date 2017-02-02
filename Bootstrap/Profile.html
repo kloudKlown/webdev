@@ -7,46 +7,65 @@
     <title>My Profile</title>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top" >
+    <div class="container-fluid" style="background-color: #2aabd2">
         <div class="navbar-header" >
-            <a class="navbar-brand" href="#"  >
+            <a class="navbar-brand" href="#" style="color: white; font-size: xx-large">
             Profile
             </a>
-            <p class="navbar-text pull-left">
-                <a href="#">
-                    <span  class="glyphicon glyphicon-ok"></span>
-                </a>
-            </p>
         </div>
+
+        <div class="navbar-text pull-right" style="margin-right: 0px;">
+            <a href="#">
+                <span class="glyphicon glyphicon-ok"style="color: white;"></span>
+            </a>
+        </div>
+
     </div>
+
 </nav>
-    <!--<div align="center" >-->
+
+   <!--<div align="center" >-->
        <!--<div id="top">  <h1 >Profile</h1> </div> </p>-->
 
     <!--</div>-->
-    <div align="center" class="container">
+<br>
+<br>
+<br>
+
+    <div class="container">
         <br>
         <br>
-        <a> Username</a> <br>
-        <input type="text" id="userName" placeholder="Username"></input>
+        <label> Username</label> <br>
+        <input type="text" class="form-control" id="userName" placeholder="Username"></input>
         <br>
         <br>
-        <a> Email id</a> <br>
-        <input type="text" id="email" placeholder="Email"></input>
+        <label> Email id</label> <br>
+        <input type="email" class="form-control" id="email" placeholder="Email"></input>
         <br>
         <br>
-        <a> Name</a> <br>
-        <input type="text" id="Fname" placeholder="name"></input>
+        <label> Name</label> <br>
+        <input type="text" class="form-control" id="Fname" placeholder="name"></input>
         <br>
         <br>
-        <a  href="Website-list.html">  <button type="submit" id="websites" style="background-color: #a94442; color: white"> Websites </button> </a>
+        <!--<button type="submit" class="btn btn-primary">Transfer cash</button>-->
+
+        <a  href="Website-list.html">  <button  class="btn btn-primary" type="submit" id="websites"> Websites </button> </a>
         <br>
         <br>
         <br>
-        <a  href="Login.html">  <button type="submit" id="log" style="background-color: #2b669a; color: white   "> Logout </button> </a>
+        <a  href="Login.html">  <button type="submit" class="btn btn-danger" id="log"> Logout </button> </a>
 
     </div>
 
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                Fixed Bottom
+            </a>
+        </div>
+    </div>
+</nav>
 </body>
 </html>
