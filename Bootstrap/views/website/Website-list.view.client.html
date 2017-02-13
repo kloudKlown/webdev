@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="css/bootstrap.css" rel="stylesheet"/>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<link href="css/bootstrap.css" rel="stylesheet"/>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+<!--</head>-->
+<!--<body>-->
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid" style="background-color: #2aabd2">
-        <div class="navbar-text pull-left">
-            <a href="Profile.html">
-                <span class="glyphicon glyphicon-chevron-left"></span>
+        <div class="navbar-header pull-left">
+            <a href="#/user/123">
+                <span class="glyphicon glyphicon-chevron-left" style="color: white"></span>
             </a>
         </div>
         <div class="navbar-text pull-right">
-            <a href="Website-new.html">
+            <a href="#/user/{{websiteList.userId}}/website/new">
                 <span class="glyphicon glyphicon-plus"></span>
             </a>
         </div>
@@ -27,22 +27,24 @@
     </div>
 </nav>
 
-<div class="container-fluid">
+    <div class="container-fluid" ng-controller="WebsiteListController">
     <br>
     <br>
     <br>
 
+        <li class="list-group-item" ng-repeat="website in websiteList.allWebsites" >
 
-        <li class="list-group-item">
+            <a href="page.html">{{website.name}}</a>
 
-            <a href="page.html">Script Testing App</a>
-
-            <a href="website-edit.html" class="pull-right">
+            <a href="#/user/{{websiteList.userId}}/website/{{website.webid}}" class="pull-right">
                 <span class="glyphicon glyphicon-cog"></span>
+
+
             </a>
         </li>
 
     </ul>
+
 </div>
 
 
@@ -58,6 +60,6 @@
 
 
 
-</body>
+<!--</body>-->
 
-</html>
+<!--</html>-->

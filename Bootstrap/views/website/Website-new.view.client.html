@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="css/bootstrap.css" rel="stylesheet"/>
-    <meta charset="UTF-8">
-    <title>My Webpages</title>
-</head>
-<body>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<link href="css/bootstrap.css" rel="stylesheet"/>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>My Webpages</title>-->
+<!--</head>-->
+<!--<body>-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="row container-fluid" style="background-color:lightskyblue">
 
         <div class="col-sm-4 hidden-xs" >
             <div class="navbar-text pull-left" style="margin-left: 0px;">
-                <a href="#">
+                <a href="#/user/{{websiteNew.userId}}/website">
                     <span class="glyphicon glyphicon-chevron-left" style="color: black"></span>
                 </a>
             </div>
@@ -28,7 +28,7 @@
         </div>
         <div class="col-sm-8">
             <div class="navbar-text pull-right" style="margin-right: 0px;">
-                <a href="#">
+                <a href="#/user/{{websiteNew.userId}}/website">
                     <span class="glyphicon glyphicon-ok" style="color: black"></span>
                 </a>
             </div>
@@ -41,23 +41,25 @@
     </div>
 </nav>
 
-<div class="row container-fluid">
+<div class="row container-fluid" ng-controller="WebsiteListController" >
 <br>
     <br>
     <div class="col-sm-4 hidden-xs"
          style="overflow-y: scroll;top: 0px;bottom: 0px;position: absolute;left: 0px;margin-top: 50px;padding-top: 15px;margin-bottom: 50px;">
         <ul class="list-group">
-            <li class="list-group-item">
+            <!--<li class="list-group-item" >-->
+                <!--<a href="#">-->
+                    <!--Attempt Zero-->
+                <!--</a>-->
+                <!--<a href="#">-->
+                    <!--<span class="glyphicon glyphicon-cog pull-right" style="margin-left: 10px"></span>-->
+                    <!--&lt;!&ndash;<span class="glyphicon glyphicon-play pull-right"></span>&ndash;&gt;-->
+                <!--</a>-->
+            <!--</li>-->
+            <li class="list-group-item" ng-repeat="website in websiteNew.allWebsites" >
+
                 <a href="#">
-                    Attempt Zero
-                </a>
-                <a href="#">
-                    <span class="glyphicon glyphicon-cog pull-right" style="margin-left: 10px"></span>
-                    <!--<span class="glyphicon glyphicon-play pull-right"></span>-->
-                </a>
-            </li>
-            <li class="list-group-item">Attempt one
-                <a href="#">
+                    {{website.name}}
                     <span class="glyphicon glyphicon-cog pull-right"></span>
                 </a>
             </li>
@@ -93,5 +95,5 @@
 </nav>
 
 
-</body>
-</html>
+<!--</body>-->
+<!--</html>-->

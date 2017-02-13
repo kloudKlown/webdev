@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="webdevApp">
 <head>
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <link  href="css/bootstrap.css" rel="stylesheet" />
-    <title>NBA Beginner Guide</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="services/user.service.client.js"></script>
+    <script src="views/user/profile.controller.js"></script>
+    <script src="views/user/login.controller.js"></script>
+    <script src="services/website.service.client.js"></script>
+    <script src="views/website/website-list.controller.js"></script>
+    <script src="views/website/website-edit.controller.js"></script>
+    <title>Ng Route</title>
 </head>
 <body>
-    <h1>NBA Statistics</h1>
-    <p>
-        NBA has been around for over 70 years and in recent years its very popular for daily sports betting. To get more insight login/register below.
-    </p>
+<div class="container">
+    <h1>NBA STATS</h1>
 
-    <h2>Required links</h2>
-    <ul>
-        <li>
-            <a href="Register.html">Register</a>
-        </li>
-        <li>
-            <a href="Login.html">Login</a>
-        </li>
-        <li>
-            <a href="Profile.html">Profile</a>
-        </li>
+    <a href="" class="btn btn-primary">Home</a>
+    <a href="#/login" class="btn btn-success">Login</a>
+    <a href="#/register" class="btn btn-success">Register</a>
+    </div>
 
-    </ul>
+    <div ng-view>
+
+
+
+        </div>
 </body>
 </html>

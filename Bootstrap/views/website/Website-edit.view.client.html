@@ -1,0 +1,137 @@
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">-->
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>-->
+    <!--<link href="../css/style.css" rel="stylesheet"/>-->
+    <!--<script-->
+            <!--src="https://code.jquery.com/jquery-2.2.4.min.js"-->
+            <!--integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="-->
+            <!--crossorigin="anonymous"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!--<title>website-new</title>-->
+<!--</head>-->
+<!--<body>-->
+<nav class="navbar navbar-default navbar-fixed-top" xmlns="http://www.w3.org/1999/html"
+     xmlns="http://www.w3.org/1999/html">
+    <div class="row container-fluid bg-primary">
+        <div class="col-xs-4" >
+            <div class="col-xs-1 navbar-text pull-left" style="color: black">
+                <a href="#/user/{{websiteEdit.userId}}/website">
+                    <span class="glyphicon glyphicon-chevron-left" style="color: white"></span>
+                </a>
+            </div>
+            <div class="col-xs-2 navbar-header hidden-xs">
+                <a class="navbar-brand" style="color: white">
+                    Websites
+                </a>
+            </div>
+            <div class=" col-xs-1 navbar-text pull-right hidden-xs">
+                <a>
+                    <span class="glyphicon glyphicon-plus"></span>
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-8">
+            <div class="navbar-text pull-right">
+                <a href="#/user/{{websiteEdit.userId}}/website" type="submit" ng-click="websiteEdit.editWeb(websiteEdit.Web.name,websiteEdit.Web.description)" style="color: white">
+                    <span class="glyphicon glyphicon-ok"></span>
+                </a>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand no-left-margin" style="color: white">
+                    Edit Website
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="row container-fluid "  ng-controller="WebsiteEditController">
+    <div class="col-sm-4 hidden-xs ">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-10">
+                        <a href="#/user/{{websiteEdit.userId}}/website/{{websiteEdit.wId}}">{{websiteEdit.Web.name}}</a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#/user/{{websiteEdit.userId}}/website/{{websiteEdit.wId}}">
+                            <span class="glyphicon glyphicon-cog pull-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!--<li class="list-group-item">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-xs-10">-->
+                        <!--<a href="../page/page-list.html">Address Book App</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-xs-2">-->
+                        <!--<a href="website-edit.html">-->
+                            <!--<span class="glyphicon glyphicon-cog pull-right"></span>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="list-group-item">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-xs-10">-->
+                        <!--<a href="../page/page-list.html">Script Testing App</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-xs-2">-->
+                        <!--<a href="website-edit.html">-->
+                            <!--<span class="glyphicon glyphicon-cog pull-right"></span>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="list-group-item">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-xs-10">-->
+                        <!--<a href="../page/page-list.html">Blogger</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-xs-2">-->
+                        <!--<a href="website-edit.html">-->
+                            <!--<span class="glyphicon glyphicon-cog pull-right"></span>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <div class="col-sm-8">
+        <label class="seven-padding">Website Name</label>
+        <input placeholder="Blogger"
+               class="form-control"
+               type="text" ng-model="websiteEdit.Web.name"/>
+        <label >Website Description</label>
+        <textarea placeholder=""
+                  rows="3"
+                  class="form-control" ng-model="websiteEdit.Web.description"></textarea>
+        <!--href="#/user/{{websiteEdit.userId}}/website"-->
+        <a  href="#/user/{{websiteEdit.userId}}/website" type="submit" class="btn btn-danger btn-block" ng-click="websiteEdit.deleteWeb(websiteEdit.wId)"  >
+            Delete
+        </a>
+    </div>
+
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid bg-primary">
+        <div class="navbar-text pull-right">
+            <a href="#/user/{{websiteEdit.userId}}">
+                <span class="glyphicon glyphicon-user "></span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!--</body>-->
+<!--</html>-->

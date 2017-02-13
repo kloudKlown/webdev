@@ -1,0 +1,94 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>-->
+    <!--<link  href="css/bootstrap.css" rel="stylesheet" />-->
+    <!--<title>My Profile</title>-->
+
+<!--</head>-->
+<!--<body>-->
+<nav class="navbar navbar-default navbar-fixed-top" >
+    <div class="container-fluid" style="background-color: #2aabd2">
+        <div class="navbar-header" >
+            <a class="navbar-brand" href="#" style="color: white; font-size: xx-large">
+            Profile
+            </a>
+        </div>
+
+        <div class="navbar-text pull-right" style="margin-right: 0px;">
+            <a href="#">
+                <span class="glyphicon glyphicon-ok"style="color: white;"></span>
+            </a>
+        </div>
+
+    </div>
+
+</nav>
+
+   <!--<div align="center" >-->
+       <!--<div id="top">  <h1 >Profile</h1> </div> </p>-->
+
+    <!--</div>-->
+<br>
+<br>
+<br>
+
+    <div class="container" ng-controller="Example1Controller" >
+        <br>
+        <br>
+        <label> Username</label> <br>
+        <input ng-model="profile.users1.firstName" class="form-control" placeholder="Username"></input>
+        <br>
+        <br>
+        <label> Email id</label> <br>
+        <input type="email"  class="form-control" id="email" placeholder="Email"></input>
+        <br>
+        <br>
+        <label> Name</label> <br>
+        <input ng-model="profile.users1.username"  type="text" class="form-control" id="Fname" placeholder="name"></input>
+        <br>
+        <!--<div ng-show="profile.userID"  class="alert-danger" role="alert">-->
+
+        <!--{{profile.userID}}-->
+            <!--</div>-->
+        <br>
+
+        <!--<h2>Iterate Over Object Array</h2>-->
+        <!--&lt;!&ndash;<div ng-controller="Example2Controller as controller" class="col">&ndash;&gt;-->
+        <!--<div  class="row">-->
+            <!--<button  type="submit" id="Add"> Add User </button>-->
+
+            <!--&lt;!&ndash;<div class="col-md-5">&ndash;&gt;-->
+                    <!--<ul>-->
+                        <!--<li ng-repeat="uname in names">-->
+                            <!--{{uname.username}}-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+        <!--<button type="submit" class="btn btn-primary">Transfer cash</button>-->
+
+        <br>
+        <br>
+
+        <br>
+            <a  href="#/user/{{profile.userID}}/website">  <button  class="btn btn-primary" type="submit" id="websites"> Websites </button> </a>
+        <br>
+        <br>
+        <br>
+        <a  href="#/login">  <button type="submit" class="btn btn-danger" id="log"> Logout </button> </a>
+
+    </div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                Fixed Bottom
+            </a>
+        </div>
+    </div>
+</nav>
+<!--</body>-->
+<!--</html>-->
